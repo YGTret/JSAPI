@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фото дня</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        #image-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        #like-button {
+            background-color: #ff4b5c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #like-button:hover {
+            background-color: #ff6b7c;
+        }
+        #like-counter {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        #history {
+            margin-top: 20px;
+            max-width: 600px;
+        }
+        .history-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Фото дня</h1>
+    <div id="image-container">
+        <img id="photo" src="" alt="Photo of the day">
+        <p id="photographer"></p>
+        <button id="like-button">❤️ Лайк</button>
+        <p id="like-counter">Лайков: 0</p>
+    </div>
+
+    <div id="history">
+        <h2>История просмотров</h2>
+        <div id="history-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
